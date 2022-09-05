@@ -1,0 +1,151 @@
+header {
+    height: 90px;
+    background-image: url(//cdn.shopify.com/s/files/1/0014/1962/t/56/assets/pattern-hollow-knight.png?v=5429807…);
+    background-size: auto 150px;
+
+    background-color: #44496A;
+    border-bottom: solid 2px;
+    border-bottom-color: #b8d053;
+
+    nav {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+.logoContainer {
+    width: 120px;
+    padding-bottom: 4px;
+
+    &:hover {
+        transition: 1s;
+        background-color: #5c79999b;
+        
+    }
+
+    .logo {
+        width: 100%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.menu {
+    justify-content: space-between;
+
+    .menu__item {
+        padding: 10px 5px 10px 5px;
+
+
+        &:hover {
+            transition: 1s;
+            background-color: #5c79999b;
+        }
+
+        .menu__link {
+            font-family: 'Staatliches', cursive;
+            font-size: 3em;
+            padding: 1.5rem;
+            position: relative;
+        }
+    }
+}
+
+.menuSecond {
+    width: 110px;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 20px;
+
+        &:hover {
+            border-radius: 10px;
+            background-color: #5c79999b;
+        }
+
+        .menuSecond__link {
+            font-family: 'Staatliches', cursive;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+    }
+}
+
+
+
+
+.mainBuscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+
+    :hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 90px;
+        background-color: #5c79999b;
+    }
+
+    .lupa {
+        color: #fff;
+        font-size: 2.5em;
+        cursor: pointer;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+.fa-circle {
+
+    color: #fff;
+    font-size: 0.7em;
+}
+
+.sectionCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    cursor: pointer;
+    
+    .carritoMain {
+        position: relative;
+        background-image: url(../../assets/carrito.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        
+        
+    
+        .cantidadCarrito {
+            position: absolute;
+            bottom: 1px;
+        }
+    }
+}
+
+.sectionCarrito:hover{
+    background-color:  #b7d053bd;
+}

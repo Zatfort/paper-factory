@@ -1,0 +1,29 @@
+/* Imports */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #637381;
+}
+
+/* Globals */
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  color: #0b0c0d;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
