@@ -1,9 +1,16 @@
-
-import Header from "./components/Header/Header"
+import NavBar from "./components/Navbar/NavBar";
+import ItemListContainer from "./Containers/ItemListContainer/ItemListContainer";
 
 const App = () =>{
+
+  const bienvenida = "bienvenido a Paper Factory SALE "
+
+
   return(
-    <Header />
+    <>
+    <NavBar />
+    <ItemListContainer greeting={bienvenida} />
+    </>
   )
 }
 
