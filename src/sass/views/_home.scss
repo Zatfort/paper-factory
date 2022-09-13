@@ -1,15 +1,109 @@
+.saludos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0ce7786d-c24a-4c55-b90b-090cd82bc80d/dcacr2j-42e895ed-7b98-4fb2-a146-bd9d542212c4.jpg/v1/fill/w_1600,h_1036,q_75,strp/farewell___hollow_knight_by_awlita_dcacr2j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAzNiIsInBhdGgiOiJcL2ZcLzBjZTc3ODZkLWMyNGEtNGM1NS1iOTBiLTA5MGNkODJiYzgwZFwvZGNhY3Iyai00MmU4OTVlZC03Yjk4LTRmYjItYTE0Ni1iZDlkNTQyMjEyYzQuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.c-hKHnptOQzfsCAVI7rSXG7jnDbypNwSDHjdqROb-QI);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: medium;
 
-.saludos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    width: 100%;
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0ce7786d-c24a-4c55-b90b-090cd82bc80d/dcacr2j-42e895ed-7b98-4fb2-a146-bd9d542212c4.jpg/v1/fill/w_1600,h_1036,q_75,strp/farewell___hollow_knight_by_awlita_dcacr2j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAzNiIsInBhdGgiOiJcL2ZcLzBjZTc3ODZkLWMyNGEtNGM1NS1iOTBiLTA5MGNkODJiYzgwZFwvZGNhY3Iyai00MmU4OTVlZC03Yjk4LTRmYjItYTE0Ni1iZDlkNTQyMjEyYzQuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.c-hKHnptOQzfsCAVI7rSXG7jnDbypNwSDHjdqROb-QI);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-size: medium;
+}
 
+.articulo {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .articuloConContador {
+
+    .Contador {
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+
+.css-button-3d--rose {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #ff6392;
+  box-shadow: 0 5px #ff0a78;
+}
+
+.css-button-3d--rose:hover {
+  box-shadow: 0 3px #ff0a78;
+  top: 1px;
+}
+
+.css-button-3d--rose:active {
+  box-shadow: 0 0 #ff0a78;
+  top: 5px;
+}
+
+
+
+
+.css-button-shadow-border-sliding--sky {
+  margin-left: 30px;
+  min-width: 300px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+  background: #4433ff;
+  z-index: 1;
+}
+
+.css-button-shadow-border-sliding--sky:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.css-button-shadow-border-sliding--sky:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+  transition: all 0.3s ease;
+  background-color: #3a86ff;
+  right: 0;
+}
+
+.css-button-shadow-border-sliding--sky:active {
+  top: 2px;
 }

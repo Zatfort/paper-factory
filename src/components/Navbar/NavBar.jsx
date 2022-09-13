@@ -1,5 +1,5 @@
+
 import React from "react";
-import '../../App.scss'
 import logo from "../../assets/logo.svg"
 import CartWidget from "../Cart/CartWidget";
 
