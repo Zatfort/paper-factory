@@ -40,18 +40,7 @@ const ItemCount = ({ stock, onAdd,initial }) => {
                     <button onClick={comprar} className="css-button-shadow-border-sliding--sky">AGREGAR AL CARRITO</button>
                 </article>
             </div>
-            {/* cart del desafio 8/09 */}
-            <div className="flex-row">
-                <section className="cart_desafio">
-                    <article >
-                        <img className="cart_hollow" src="https://cdn.shopify.com/s/files/1/0014/1962/products/product_HK_mini_figurines_knight_itemview_360x360.png?v=1661370610" alt="mini figure" />
-                        <figcaption className="cart_hollow--info">
-                            <span className="title"> HOLLOW KNIGHT <br /> <small className="description"> KNIGHT MINI FIGURINE </small> </span>
-                            <span className="price">$500</span>
-                        </figcaption>
-                    </article>
-                </section>
-            </div>
+            
         </>
     )
 }

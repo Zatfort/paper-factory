@@ -3,9 +3,6 @@ import ItemListContainer from "./Containers/ItemListContainer/ItemListContainer"
 import ItemCount from "./Containers/ItemCount/ItemCount";
 
 const App = () =>{
-
-  const bienvenida = "bienvenido a Paper Factory SALE "
-
   const onAdd =(contador)=>{
     
   }
@@ -15,7 +12,7 @@ const App = () =>{
     <>
     <NavBar />
     <ItemCount stock={5} initial={1} onAdd={onAdd} />
-    {/* <ItemListContainer greeting={bienvenida} /> */}
+    <ItemListContainer/>
     </>
   )
 }
