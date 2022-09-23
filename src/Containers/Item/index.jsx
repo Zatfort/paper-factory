@@ -11,6 +11,8 @@ const Item = ({ product }) => {
                     </figcaption>
                 </article>
             </section>
+            
+           
         </>
     )
 }

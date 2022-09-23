@@ -161,3 +161,42 @@
   height: 800px;
 
 }
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  border-radius: 50px;
+
+
+}
+.muestra{
+  margin-top: 20px;
+}
+.itemdetail{
+  
+  width: 60%;
+  height: 516px;
+  
+  img{
+    width: 50%;
+  }
+  background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+  
+}
+
+.divison{
+  height: 300px;
+  justify-content: space-around;
+  
+
+}
+.description{
+  font-size: 1em;
+}
+
+
+
+

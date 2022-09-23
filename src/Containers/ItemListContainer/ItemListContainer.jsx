@@ -12,12 +12,12 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         customFetch(products)
-            .then(res =>{
+            .then(res => {
                 setLoading(false)
                 setListProducts(res)
-                
-            } )
-    }, [])
+
+            })
+    },[])
 
 
 
@@ -26,11 +26,13 @@ const ItemListContainer = () => {
             <div className=' flex-row contenedorMain '>
                 {
                     loading ?
-                    <CircularProgress />
-                    :
-                    <ItemList listProducts={listProducts} />
+                        <CircularProgress />
+                        :
+                        <ItemList listProducts={listProducts} />
+
 
                 }
+
 
             </div>
         </>
