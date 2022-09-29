@@ -120,33 +120,39 @@
 // cart de hollow knight
 
 
-.cart_desafio{
+.cart_desafio {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  .cart_hollow{
+
+  .cart_hollow {
     background-image: url(https://cdn.shopify.com/s/files/1/0014/1962/files/bg-bigpixels.png?v=1637349768);
     background-color: #f7f8ff;
     background-repeat: repeat;
     background-size: 292px;
     background-position: 0 0;
     border-radius: 5px;
-    &--info{
+    width: 150px;
+
+    &--info {
       display: flex;
       justify-content: space-between;
       color: #4b6b8d;
       line-height: 1.5;
-      .title{
+
+      .title {
         font-size: larger;
         font-weight: 600;
-        .description{
+
+        .description {
           font-size: 12px;
           font-weight: 400;
         }
       }
-      .price{
+
+      .price {
         font-size: larger;
         font-weight: 600;
 
@@ -157,12 +163,12 @@
 
 
 
-.contenedorMain{
+.contenedorMain {
   height: 800px;
 
 }
 
-.contenedor{
+.contenedor {
   display: flex;
   justify-content: center;
   height: 600px;
@@ -170,33 +176,32 @@
 
 
 }
-.muestra{
+
+.muestra {
   margin-top: 20px;
 }
-.itemdetail{
-  
+
+.itemdetail {
+
   width: 60%;
   height: 516px;
-  
-  img{
+
+  img {
     width: 50%;
   }
+
   background: #e0e0e0;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
-  
+  box-shadow: 20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+
 }
 
-.divison{
+.divison {
   height: 300px;
   justify-content: space-around;
-  
+
 
 }
-.description{
+
+.description {
   font-size: 1em;
 }
-
-
-
-

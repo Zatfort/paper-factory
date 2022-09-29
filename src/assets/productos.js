@@ -27,6 +27,7 @@ export const products = [
         category:"T-Shirt",
         price:28,
         product:"PURE VESSEL T-SHIRT"
+        
 
     }
 ]
