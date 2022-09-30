@@ -28,24 +28,24 @@ const NavBar = () => {
                                         <section className="flex-row">
                                             <Link to="/categories/electronics">
                                                 <li className="ppp">
-                                                    <h2>electronics</h2>
+                                                    <h2>APPAREL</h2>
                                                     <i className="fa-solid fa-shirt"></i>
                                                 </li>
                                             </Link>
                                             <Link to="/categories/jewelery">
                                                 <li className="ppp" >
-                                                    <h2>jewelery</h2>
+                                                    <h2>MUSIC & VIDEO</h2>
                                                     <i className="fa-solid fa-music"></i>
                                                 </li>
                                             </Link>
                                             <Link to="/categories/men's clothing">
                                                 <li className="ppp" >
-                                                    <h2>men's clothing</h2>
+                                                    <h2>GAMES</h2>
                                                     <i className="fa-solid fa-gamepad"></i>
                                                 </li>
                                             </Link>
                                         </section>
-                                        {/* <section className="flex-row">
+                                        <section className="flex-row">
                                             <Link to="/categories/books">
                                                 <li className="ppp" >
                                                     <h2>BOOKS</h2>
@@ -64,7 +64,7 @@ const NavBar = () => {
                                                     <i className="fa-solid fa-house-chimney"></i>
                                                 </li>
                                             </Link>
-                                        </section> */}
+                                        </section>
                                     </ul>
                                 </li>
                                 {/* <li className="sub-menu__item">

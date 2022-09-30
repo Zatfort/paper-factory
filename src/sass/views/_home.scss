@@ -126,15 +126,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 
   .cart_hollow {
+    
     background-image: url(https://cdn.shopify.com/s/files/1/0014/1962/files/bg-bigpixels.png?v=1637349768);
     background-color: #f7f8ff;
     background-repeat: repeat;
     background-size: 292px;
     background-position: 0 0;
     border-radius: 5px;
-    width: 150px;
+    width: 250px;
+    cursor: pointer;
+    
+    
+    
+  
 
     &--info {
       display: flex;
@@ -204,4 +211,14 @@
 
 .description {
   font-size: 1em;
+}
+
+
+
+.circular{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 25em;
 }
