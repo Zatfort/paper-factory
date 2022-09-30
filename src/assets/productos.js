@@ -4,7 +4,7 @@ export const products = [
         id: 1 ,
         image:"https://cdn.shopify.com/s/files/1/0014/1962/products/product_HK_mini_figurines_knight_itemview_360x360.png?v=1661370610",
         product:"KNIGHT MINI FIGURINE",
-        category:"Figurines",
+        category:"figurines",
         price: 1500,
         stock: 20
 
@@ -12,7 +12,9 @@ export const products = [
     {
         id: 2 ,
         image:"https://cdn.shopify.com/s/files/1/0014/1962/products/product_hk_bloomingadventure_designview_360x360.png?v=1527617637",
+        imageDetail:"https://cdn.shopify.com/s/files/1/0014/1962/products/product_HK_bloomingadventure_poster_main.png?v=1527617637",
         product:"BLOOMING ADVENTURE",
+        productDetail :"Blooming Adventure",
         category:"posters",
         price:24,
         stock: 20

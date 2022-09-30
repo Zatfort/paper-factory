@@ -7,18 +7,28 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
+    let { IdCategoria } = useParams()
     
     const [listProducts, setListProducts] = useState([])
     const [ loading, setLoading ] = useState(true)
+   
+
 
     useEffect(() => {
-        customFetch(products)
+        const db = IdCategoria
+        ? products.filter(product => product.category == IdCategoria)
+        :products;
+        customFetch(db)
            .then(res =>{
                 setLoading(false)
                 setListProducts(res)
         } )    
             
-    },[])
+    },[IdCategoria])
+
+
+
+
 
 
     return (

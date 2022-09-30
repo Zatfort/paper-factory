@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 .saludos {
   display: flex;
   justify-content: center;
@@ -36,32 +38,7 @@
 }
 
 
-.css-button-3d--rose {
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #ff6392;
-  box-shadow: 0 5px #ff0a78;
-}
 
-.css-button-3d--rose:hover {
-  box-shadow: 0 3px #ff0a78;
-  top: 1px;
-}
-
-.css-button-3d--rose:active {
-  box-shadow: 0 0 #ff0a78;
-  top: 5px;
-}
 
 
 
@@ -126,10 +103,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 
   .cart_hollow {
-    
+
     background-image: url(https://cdn.shopify.com/s/files/1/0014/1962/files/bg-bigpixels.png?v=1637349768);
     background-color: #f7f8ff;
     background-repeat: repeat;
@@ -138,10 +115,10 @@
     border-radius: 5px;
     width: 250px;
     cursor: pointer;
-    
-    
-    
-  
+
+
+
+
 
     &--info {
       display: flex;
@@ -175,39 +152,118 @@
 
 }
 
-.contenedor {
-  display: flex;
-  justify-content: center;
-  height: 600px;
-  border-radius: 50px;
+// ITEM DETAIL
 
 
-}
-
-.muestra {
-  margin-top: 20px;
-}
 
 .itemdetail {
+  font-family: 'Staatliches', cursive;
+  font-size: 3em;
+  padding: 1.5rem;
+  color: #70a7c5;
 
-  width: 60%;
-  height: 516px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
 
-  img {
-    width: 50%;
+  .item {
+    margin: 10px 10px 10px 10px;
+    background-color: #fff;
+    height: 100%;
+    align-items: center;
+    gap: 0.5em;
+
+    .imageDetail {
+      width: 765px;
+      height: 510px;
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+    
+
+
+
+
+
+
+
+
+    .description {
+     
+      width: 350px;
+      height: 510px;
+
+      h2 {
+        font-family: 'Poppins', sans-serif;
+
+
+
+
+
+        font-size: 1em;
+        color: #70a7c5;
+
+      }
+
+    }
   }
 
-  background: #e0e0e0;
-  box-shadow: 20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+
+
+
+
 
 }
 
-.divison {
-  height: 300px;
-  justify-content: space-around;
 
 
+// BOTON ADD TO CART
+.css-button-3d--rose {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #ff6392;
+  box-shadow: 0 5px #ff0a78;
 }
+
+.css-button-3d--rose:hover {
+  box-shadow: 0 3px #ff0a78;
+  top: 1px;
+}
+
+.css-button-3d--rose:active {
+  box-shadow: 0 0 #ff0a78;
+  top: 5px;
+}
+
+//         *****
+
+
+
+
+
+
+
+
+
+
+
+// ____________________________________________
+
+
 
 .description {
   font-size: 1em;
@@ -215,7 +271,7 @@
 
 
 
-.circular{
+.circular {
   display: flex;
   justify-content: center;
   align-items: center;

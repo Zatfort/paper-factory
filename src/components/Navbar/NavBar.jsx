@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg"
 import logomusic from "../../assets/logomusica.svg"
 import CartWidget from "../Cart/CartWidget";
 import { Link, NavLink } from 'react-router-dom'
+import { products } from "../../assets/productos";
 
 
 const NavBar = () => {
@@ -26,19 +27,19 @@ const NavBar = () => {
                                     {/* <Link to="" className="sub-menu__link">remeras</Link> */}
                                     <ul className="flex-column listCategories ">
                                         <section className="flex-row">
-                                            <Link to="/categories/electronics">
+                                            <Link to="/categoria/figurines">
                                                 <li className="ppp">
                                                     <h2>APPAREL</h2>
                                                     <i className="fa-solid fa-shirt"></i>
                                                 </li>
                                             </Link>
-                                            <Link to="/categories/jewelery">
+                                            <Link to="/categoria/posters">
                                                 <li className="ppp" >
                                                     <h2>MUSIC & VIDEO</h2>
                                                     <i className="fa-solid fa-music"></i>
                                                 </li>
                                             </Link>
-                                            <Link to="/categories/men's clothing">
+                                            <Link to="/categoria/Books">
                                                 <li className="ppp" >
                                                     <h2>GAMES</h2>
                                                     <i className="fa-solid fa-gamepad"></i>

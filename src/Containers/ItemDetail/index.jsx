@@ -1,27 +1,41 @@
 
 const ItemDetail = ({ producto }) => {
     return (
-        <div className="contenedor">
-            <section className="flex-row itemdetail">
-                <picture>              
-                    <img src={producto.image} alt="" />
+
+        <>
+
+        <section className="itemdetail container" >
+                <h1>Posters</h1>
+            <article className=" item flex-row ">
+                <picture className="imageDetail">              
+                    <img src={producto.imageDetail} alt="" />
                 </picture>
-                <article>
-                    <figcaption>
-                        <div className="muestra">
+                <article className="description" >
+
+                    <article>
+                        <h2> {producto.productDetail}</h2>
+
+
+
+                    </article>
+                    {/* <figcaption>
+                        <div>
                             <h2>{producto.category} <br /> <h1>{producto.title}</h1> </h2>
                             <h2>ID:{producto.id}</h2>
                         </div>
-                        <div className="flex-column divison">
+                        <div >
                             <h2>price {producto.price}</h2>
                             <button className="css-button-3d--rose" >ADD TO CART</button>
                             <h2>{producto.description}</h2>
                         </div>
-                    </figcaption>
+                    </figcaption> */}
                 </article>
-            </section>
-        </div>
+            </article>
 
+        </section>
+        
+        
+        </>
     );
 }
 
