@@ -1,4 +1,4 @@
-export	const customFetch = (products, stallTime = 2000, id,) => {
+export	const customFetch = (products, stallTime = 0, id,) => {
     return new Promise((resolve, reject,) => {
         setTimeout(() => {
             try{
