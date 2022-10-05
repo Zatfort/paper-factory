@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemList from '../ItemList';
+import ItemList from "../../components/ItemList"
 import { products } from "../../assets/productos"
 import { customFetch } from '../../utils/customFetch';
 import { useState, useEffect } from 'react';

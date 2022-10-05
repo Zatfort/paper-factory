@@ -4,6 +4,8 @@ import React, { useState } from "react"
 
 const ItemCount = ({ stock, onAdd,initial }) => {
 
+    
+
 
     const [contador, setContador] = useState(initial);
 
@@ -17,8 +19,13 @@ const ItemCount = ({ stock, onAdd,initial }) => {
 
     const comprar = () => {
         setContador(initial)
-        alert("GRACIAS POR SU COMPRA")
         onAdd(contador)
+
+    }
+
+    const agregarCarrito = (contador) =>{
+        onAdd(contador)
+        setContador(1)
 
     }
 

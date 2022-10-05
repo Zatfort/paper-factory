@@ -5,9 +5,12 @@ import logomusic from "../../assets/logomusica.svg"
 import CartWidget from "../Cart/CartWidget";
 import { Link, NavLink } from 'react-router-dom'
 import { products } from "../../assets/productos";
+import { useContext } from "react";
+import { CartContext } from "../../Context/CartContext";
 
 
 const NavBar = () => {
+    const { Cart } = useContext(CartContext)
     return (
         <>
             <header>
