@@ -16,6 +16,8 @@ const CartProvider = ({children}) => {
             setCart([...Cart, { item, quantity }])
         }
     }
+
+
     const removeItem = (item) =>{
         const newCart = Cart.filter(oldItem => {
             console.log(oldItem);
