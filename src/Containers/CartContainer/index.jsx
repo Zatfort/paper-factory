@@ -2,36 +2,9 @@ import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 import CartItem from "../../components/CartItem";
 import { Link } from "react-router-dom";
-import { database } from "../../firebase/firebase"
-import { collection, addDoc, serverTimestamp, doc, updateDoc } from "firebase/firestore";
 
 const CartContainer = () => {
     const { Cart, removeItem, total, clear } = useContext(CartContext)
-
-
-
-    const datosComprador ={
-        nombre:"dani",
-        apellido:"guti",
-        email:"dani@hotmail.com"
-    }
-
-    const finalizarCompra = () =>{
-        const ventasCollection = collection(database,"sales")
-        addDoc(ventasCollection,{
-            comprador:datosComprador,
-            items: Cart,
-            date: serverTimestamp(),
-            total,
-        })
-        .then(result =>{
-            console.log(result.id)
-            clear()
-            
-        })              
-    }
-   
-
 
     return (
         <>
@@ -64,8 +37,16 @@ const CartContainer = () => {
                                             Subtotal:
                                             <span className="total">${total.toFixed(2)}</span>
                                         </div>
-                                        <button onClick={finalizarCompra} className="comprar"  >finalizarCompra</button>
-                                        <button onClick={clear}>Vaciar Carrito</button>
+                                        <div className="image" >
+                                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/634ae905-3da7-4d3a-91fb-825189374f13/dcg26ug-754e5051-81f1-4bac-a989-2ba2e8a8e66f.png/v1/fit/w_375,h_268,strp/hot_spring_by_aamakuruu_dcg26ug-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQzIiwicGF0aCI6IlwvZlwvNjM0YWU5MDUtM2RhNy00ZDNhLTkxZmItODI1MTg5Mzc0ZjEzXC9kY2cyNnVnLTc1NGU1MDUxLTgxZjEtNGJhYy1hOTg5LTJiYTJlOGE4ZTY2Zi5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.y6Wmt5QvwIsj0XHprTWz9Azpgv_HUQSkn-ikcmn_fkI" alt="" />
+                                        </div>
+                                       
+                                        <Link className="c" to="/Form" >
+                                            <button  className="comprar" >PROCEED TO CHECKOUT » </button>
+                                        </Link>
+                                        <button onClick={clear} className="clear">CLEAR CART</button>
+
+                                        
                                     </div>
                                 </article>
                             </section>
@@ -78,11 +59,3 @@ const CartContainer = () => {
 }
 
 export default CartContainer
-
-
-{/* <div>cart</div>
-{ Cart
-? Cart.map(( item ) => (
-    <CartItem item={item} removeItem={removeItem} key={item.item.id}   />
-))
-: "vacio"} */}

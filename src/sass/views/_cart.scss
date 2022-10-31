@@ -19,7 +19,12 @@
             padding-right: 15px;
             padding-left: 15px;
 
+            figure:not(:first-child) {
+                border-top: 1px solid rgba(0,0,0,.1);
+            }
+
             figure {
+                
                 padding: 1rem 0;
 
                 picture {
@@ -39,47 +44,48 @@
                 }
 
                 figcaption {
-                    width: 200px;
+                    width: 300px;
                     text-align: right;
-
                     .caption-info {
+                        .cart-quantity{
+                            font-size: 2em;
+                            color: #495057;
+                            font-weight: 600;
+                        }
+                        .cart-x{
+                            font-size: 1.5em;
+                        }
                         .cart-price {
                             font-size: 2em;
                             color: #008060;
                             font-weight: 600;
                             margin-left: 10px;
                         }
-
                         h5 {
                             margin-top: 5px;
                             font-size: 1.5em;
                             color: #4b6b8d;
                         }
-
                     }
-
                     .cart-button {
+                        display: flex;
                         margin-top: 20px;
-
+                        gap: 1rem;
                         button {
                             border: none;
                             cursor: pointer;
                             background: none;
                             color: #185eb4;
-
                             padding: 2px 4px;
                             font-weight: 600;
                             font-size: 14px;
                         }
-
-
                     }
                 }
             }
         }
-
         .cart_right {
-            
+            background-color: #fcfcfc;
             width: 440px;
             height: 700px;
             padding-right: 15px;
@@ -96,27 +102,29 @@
                     font-size: 2.5rem;
                     text-align:right;
                      color:#4b6b8d;
-                     border-bottom: 1px solid #e3e7ec;
-                    
+                     border-bottom: 1px solid #e3e7ec;                   
                     .total{
                         font-size: 2.5rem;
                         color: #008060;
                         margin-left: 10px;
-
                     }
-
                 }
-
-
+                .image{
+                    margin-top: 1rem;
+                    width: 250px;
+                   
+                    
+                    img{
+                        width: 100%;
+                        
+                    }
+                }
             }
-
         }
-
     }
 }
 
 .comprar{
-    margin-top: 100px;/*cambiar a su contenedor padre*/
     width: 100%;
     color: #fff;
     padding: 25px 10px;
@@ -130,6 +138,7 @@
     border: none;
     background-color: #008060;
     border-color: #008060;
+    font-size: 2rem;
   }
   .comprar:hover {
     background-color: #004d3a;
@@ -137,6 +146,40 @@
 
   }
   .comprar:active {
+    top: 2px;
+  }
+  .c{
+    width: 100%;
+  }
+
+  
+
+//   boton clear cart
+
+.clear{
+    margin-top: 50px;/*cambiar a su contenedor padre*/
+    width: 100%;
+    color: #fff;
+    padding: 25px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(203, 19, 19);
+    border-color: rgb(203, 19, 19);
+    font-size: 2rem;
+
+}
+.clear:hover {
+    background-color: rgb(139, 18, 18);
+    border-color: rgb(139, 18, 18);
+
+  }
+  .clear:active {
     top: 2px;
   }
 

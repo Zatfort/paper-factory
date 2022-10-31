@@ -4,6 +4,7 @@ import ItemDetailContainer from "./Containers/ItemDetailContainer";
 import { BrowserRouter,Routes,Route, } from "react-router-dom";
 import CartProvider from "./Context/CartContext";
 import CartContainer from "./Containers/CartContainer"
+import Form from "./components/Form";
 
 const App = () =>{
   const onAdd =(contador)=>{
@@ -16,13 +17,16 @@ const App = () =>{
     <BrowserRouter>
     <CartProvider>
      <NavBar />
+     <main>
      <Routes>
       <Route path="/" element={<ItemListContainer/>}  />
       <Route path="/categoria/:IdCategoria" element={<ItemListContainer/>} />
       <Route path="/product/:id" element={<ItemDetailContainer/>} />
       <Route path="/cart" element={<CartContainer/>}/>
-     </Routes>
+      <Route path="/Form" element={<Form/>}/>
       
+     </Routes>
+     </main>
     </CartProvider>
     </BrowserRouter>
     </>

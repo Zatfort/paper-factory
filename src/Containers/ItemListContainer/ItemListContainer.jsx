@@ -50,7 +50,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <div className=' flex-row contenedorMain '>
+            <div className=' flex-row contenedorMain container  '>
                 {
                     // condicion con spinner
                     // loading ?

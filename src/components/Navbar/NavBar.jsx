@@ -30,19 +30,19 @@ const NavBar = () => {
                                     {/* <Link to="" className="sub-menu__link">remeras</Link> */}
                                     <ul className="flex-column listCategories ">
                                         <section className="flex-row">
-                                            <Link to="/categoria/figurines">
+                                            <Link to="/categoria/T-Shirt">
                                                 <li className="ppp">
                                                     <h2>APPAREL</h2>
                                                     <i className="fa-solid fa-shirt"></i>
                                                 </li>
                                             </Link>
-                                            <Link to="/categoria/posters">
+                                            <Link to="/categoria/MUSIC & VIDEO">
                                                 <li className="ppp" >
                                                     <h2>MUSIC & VIDEO</h2>
                                                     <i className="fa-solid fa-music"></i>
                                                 </li>
                                             </Link>
-                                            <Link to="/categoria/Books">
+                                            <Link to="/categoria/----">
                                                 <li className="ppp" >
                                                     <h2>GAMES</h2>
                                                     <i className="fa-solid fa-gamepad"></i>
@@ -50,22 +50,23 @@ const NavBar = () => {
                                             </Link>
                                         </section>
                                         <section className="flex-row">
-                                            <Link to="/categories/books">
+                                            <Link to="/categoria/Books">
                                                 <li className="ppp" >
                                                     <h2>BOOKS</h2>
                                                     <i className="fa-solid fa-book"></i>
+                                                    
                                                 </li>
                                             </Link>
-                                            <Link to="/categories/art&posters">
+                                            <Link to="/categoria/posters">
                                                 <li className="ppp" >
                                                     <h2>ART & POSTERS</h2>
                                                     <i className="fa-solid fa-palette"></i>
                                                 </li>
                                             </Link>
-                                            <Link to="/categories/home&office">
+                                            <Link to="/categoria/figurines">
                                                 <li className="ppp" >
-                                                    <h2>HOME & OFFICE</h2>
-                                                    <i className="fa-solid fa-house-chimney"></i>
+                                                    <h2>FIGURINES</h2>
+                                                    <i class="fa-solid fa-ghost"></i>
                                                 </li>
                                             </Link>
                                         </section>

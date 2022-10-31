@@ -35,6 +35,8 @@ header {
     justify-content: space-between;
     .menu__item {
         padding:  1.7rem  0;
+        padding-top: 36px;
+    padding-bottom: 36px;
         &:hover {
             transition: 1s;
             background-color: #5c79999b;

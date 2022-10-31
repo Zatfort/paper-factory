@@ -1,0 +1,72 @@
+// formulario
+
+
+.formContainer {
+    width: 100%;
+    height: 800px;
+    .input_form {
+        width: 60%;
+        height: 750px;
+        // background-color: wheat;
+        .tittle-form{
+            margin: 15px ;
+            font-size: 2em;
+            font-family: 'Poppins', sans-serif;
+            color: #70a7c5;
+        }
+        
+
+        .formSection {
+            width: 100%;
+            padding: 0.4285714286em;
+            
+
+            .formArticle {
+                
+
+                .form {
+                    background-color: white;
+                    color: #333333;
+                    
+                    border: 1px  solid;
+                    border-color: #d9d9d9;
+                    background-clip: padding-box;
+                    border-radius: 5px;
+                    display: block;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 0.9285714286em 0.7857142857em;
+                    word-break: normal;
+                    line-height: inherit;
+                
+
+                }
+            }
+        }
+    }
+    .Link-Home{
+        margin: 10px;
+        color: #1d00bf;
+        font-size: 1.3em;
+    
+      }
+
+    .info_form {
+        width: 40%;
+        height: 750px;
+        background-color: whitesmoke;
+        .mensaje{
+            
+            width: 450px;
+            background-color: #bb2d48;
+            border-radius: 5px;
+            color: #fff;
+            padding: 10px 15px;
+            margin: 15px 15px;
+            font-size: 1.5rem;
+        }
+
+    }
+
+}
