@@ -43,7 +43,6 @@ const ItemCount = ({ stock, onAdd,initial }) => {
                     </section>
                     <section className="comprador" >
                         <button onClick={comprar} className="en">ADD TO CART</button>
-                        <button className="wishList" >  Wish List 🧡</button>
                     </section>
                 </article>
             </div>

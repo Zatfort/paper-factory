@@ -11,10 +11,9 @@ const CartItem = ({ item, removeItem }) => {
                         <span className="cart-quantity">{item.quantity} </span>
                         <span className="cart-x"> ×</span>
                         <span className="cart-price" >${item.item.price}</span>
-                        <h5>Total:$progamar.esto</h5>
                     </div>
                     <div className="cart-button" >
-                        <button onClick={() => removeItem(item)} >Move to Wish List</button>
+                        
                         <button onClick={() => removeItem(item)} >Remove</button>
                     </div>
                 </figcaption>

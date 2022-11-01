@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { database } from "../../firebase/firebase"
 import { collection, addDoc, serverTimestamp, doc, updateDoc } from "firebase/firestore";
 import swal from 'sweetalert2'
-import FormItem from "./FormItem";
 
 
 
@@ -84,7 +83,7 @@ const Form = () => {
                         </div>
                         <section className="formSection" >
                             <article className="formArticle" >
-                                <input type="text" placeholder="Company(optional)" className="form" name="DNI" onChange={handleInputChange}></input>
+                                <input type="text" placeholder="Email" className="form" name="DNI" onChange={handleInputChange}></input>
                             </article>
                         </section>
                         <section className="formSection" >
@@ -125,7 +124,7 @@ const Form = () => {
                             <div className="container-button">
                                 <button type="Submit" className="button comprar " onClick={buy}>BUY NOW</button>
                                 <Link className="Link-Home" to="/">
-                                    <h2> &#171;  Return to cart</h2>                               
+                                    <h2> &#171;  Return to collection</h2>
                                 </Link>
                             </div>
                         </section>
@@ -135,14 +134,18 @@ const Form = () => {
                         <div className="mensaje" >
                             Orders placed now may take 2 to 3 weeks before shipping out.
                         </div>
-                        <div>
-                            {
-                                Cart.map((item) =>(
-                                    <>
-                                    
-                                    </>
-                                ))
-                            }
+                        <div className="cart-full container">
+                            <div className="cart flex-row" >
+                                <article className="cart_right">
+                                    <div className="checkout-top">
+                                        <div className="subtotal  ">
+                                            Subtotal:
+                                            <span className="total">${total.toFixed(2)}</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
 
                         </div>
                     </article>

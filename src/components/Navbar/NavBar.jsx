@@ -4,7 +4,6 @@ import logo from "../../assets/logo.svg"
 import logomusic from "../../assets/logomusica.svg"
 import CartWidget from "../Cart/CartWidget";
 import { Link, NavLink } from 'react-router-dom'
-import { products } from "../../assets/productos";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 
@@ -42,12 +41,7 @@ const NavBar = () => {
                                                     <i className="fa-solid fa-music"></i>
                                                 </li>
                                             </Link>
-                                            <Link to="/categoria/----">
-                                                <li className="ppp" >
-                                                    <h2>GAMES</h2>
-                                                    <i className="fa-solid fa-gamepad"></i>
-                                                </li>
-                                            </Link>
+                                            
                                         </section>
                                         <section className="flex-row">
                                             <Link to="/categoria/Books">
@@ -72,12 +66,7 @@ const NavBar = () => {
                                         </section>
                                     </ul>
                                 </li>
-                                {/* <li className="sub-menu__item">
-                                    <Link to="" className="sub-menu__link">pantalon</Link>
-                                </li>
-                                <li className="sub-menu__item">
-                                    <Link to="" className="sub-menu__link">discos</Link>
-                                </li> */}
+                               
                             </ul>
                         </li>
                         <li className="menu__item">
@@ -93,9 +82,7 @@ const NavBar = () => {
                             <Link className="menuSecond__link " to="">login</Link>
                         </li>
                     </ul>
-                    <section className="mainBuscador">
-                        <i className="fa-solid fa-magnifying-glass lupa"></i>
-                    </section>
+                    
                     <Link to="/cart">
                         <section className="sectionCarrito">
                             < CartWidget />
